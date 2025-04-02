@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const container = document.getElementById("footer-container");
   
-    fetch("shared/footbar.html")
+    fetch("shared/footer.html")
       .then(response => {
         if (!response.ok) throw new Error("No se pudo cargar footer.html");
         return response.text();
