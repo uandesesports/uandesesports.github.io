@@ -7,9 +7,11 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="style.css" />
-
   <style>
-    /* Aplica a todas las imágenes de tarjetas de equipo */
+    html {
+      scroll-behavior: smooth;
+    }
+
     .card-img-top {
       height: 200px;
       object-fit: cover;
@@ -18,6 +20,7 @@
   </style>
 </head>
 <body class="background">
+
   <div id="navbar-container"></div>
   <script src="navbar.js"></script>
 
@@ -32,7 +35,12 @@
         ¡Bienvenidos al Torneo de League of Legends! Este evento está diseñado para todos los estudiantes de la Universidad de los Andes que deseen demostrar sus habilidades en la Grieta del Invocador. 
         Forma tu equipo y prepárate para competir por la gloria y premios increíbles.
       </p>
-      <img src="imglol/lol.jpeg" class="img-fluid mt-4">
+      <br/>
+      <!-- BOTÓN CENTRADO ENCIMA DE LA IMAGEN -->
+<div class="text-center mb-4">
+  <a href="#tabla-puntos" class="btn btn-primary btn-lg">Ver Tabla de Puntos</a>
+</div>
+<img src="imglol/lol.jpeg" class="img-fluid">
     </div>
   </div>
 
@@ -43,108 +51,79 @@
       <p class="lead">Para esta edición nos acompañan:</p>
       <br/>
       <div class="row justify-content-center g-4">
+        <!-- 12 tarjetas de equipo -->
+        <div class="col-md-4 col-sm-6"><div class="card h-100"><img class="card-img-top" src="imglol/teams/capywara.png" alt="Capywara"><div class="card-body text-center"><h3 class="card-title">Capywara</h3></div></div></div>
+        <div class="col-md-4 col-sm-6"><div class="card h-100"><img class="card-img-top" src="imglol/teams/gruporaton.jpg" alt="Grupo Ratón"><div class="card-body text-center"><h3 class="card-title">Grupo Ratón</h3></div></div></div>
+        <div class="col-md-4 col-sm-6"><div class="card h-100"><img class="card-img-top" src="imglol/teams/LuffyGoofy.JPG" alt="Luffy Goofy"><div class="card-body text-center"><h3 class="card-title">Luffy Goofy</h3></div></div></div>
+        <div class="col-md-4 col-sm-6"><div class="card h-100"><img class="card-img-top" src="imglol/teams/gragasirl.jpg" alt="Gragas IRL"><div class="card-body text-center"><h3 class="card-title">Gragas IRL</h3></div></div></div>
+        <div class="col-md-4 col-sm-6"><div class="card h-100"><img class="card-img-top" src="imglol/teams/PredniSona.jpg" alt="PredniSona"><div class="card-body text-center"><h3 class="card-title">PredniSona</h3></div></div></div>
+        <div class="col-md-4 col-sm-6"><div class="card h-100"><img class="card-img-top" src="imglol/teams/tralalero.jpg" alt="Tralalero Tralala"><div class="card-body text-center"><h3 class="card-title">Tralalero Tralala</h3></div></div></div>
+        <div class="col-md-4 col-sm-6"><div class="card h-100"><img class="card-img-top" src="imglol/teams/downs.webp" alt="Error 404"><div class="card-body text-center"><h3 class="card-title">Error 404: file not found</h3></div></div></div>
+        <div class="col-md-4 col-sm-6"><div class="card h-100"><img class="card-img-top" src="imglol/teams/cristiano.jpg" alt="FANÁTICOS"><div class="card-body text-center"><h3 class="card-title">FANÁTICOS</h3></div></div></div>
+        <div class="col-md-4 col-sm-6"><div class="card h-100"><img class="card-img-top" src="imglol/teams/rezzzicorp.jpg" alt="Recicorp"><div class="card-body text-center"><h3 class="card-title">Recicorp</h3></div></div></div>
+        <div class="col-md-4 col-sm-6"><div class="card h-100"><img class="card-img-top" src="imglol/teams/Squad Bananin - lucas mendoza.png" alt="Squad Bananin"><div class="card-body text-center"><h3 class="card-title">Squad Bananin</h3></div></div></div>
+        <div class="col-md-4 col-sm-6"><div class="card h-100"><img class="card-img-top" src="imglol/teams/T2.png" alt="T2"><div class="card-body text-center"><h3 class="card-title">T2</h3></div></div></div>
+        <div class="col-md-4 col-sm-6"><div class="card h-100"><img class="card-img-top" src="imglol/teams/BIGMAN.JPG" alt="BIGMAN BLASTOISE"><div class="card-body text-center"><h3 class="card-title">BIGMAN BLASTOISE</h3></div></div></div>
+      </div>
+    </div>
+  </div>
 
-        <div class="col-md-4 col-sm-6">
-          <div class="card h-100">
-            <img class="card-img-top" src="imglol/teams/capywara.png" alt="Capywara">
-            <div class="card-body text-center">
-              <h3 class="card-title">Capywara</h3>
-            </div>
-          </div>
+  <!-- Tabla de puntos -->
+  <div id="tabla-puntos" class="container d-flex justify-content-center">
+    <div class="bg-white p-5 rounded-4 shadow mt-5 mb-5 w-100">
+      <h1 class="display-5 fw-bold text-center mb-4">Tabla de Puntos</h1>
+      <div class="row justify-content-center g-5">
+
+        <!-- Grupo A -->
+        <div class="col-md-6">
+          <h3 class="text-center mb-3">Grupo A</h3>
+          <table class="table table-bordered text-center align-middle">
+            <thead class="table-dark"><tr><th>Equipo</th><th>Puntos</th></tr></thead>
+            <tbody>
+              <tr><td><img src="imglol/teams/gruporaton.jpg" class="img-fluid" style="height: 80px;"></td><td>0</td></tr>
+              <tr><td><img src="imglol/teams/capywara.png" class="img-fluid" style="height: 80px;"></td><td>0</td></tr>
+              <tr><td><img src="imglol/teams/T2.png" class="img-fluid" style="height: 80px;"></td><td>0</td></tr>
+              <tr><td><img src="imglol/teams/PredniSona.jpg" class="img-fluid" style="height: 80px;"></td><td>0</td></tr>
+              <tr><td><img src="imglol/teams/cristiano.jpg" class="img-fluid" style="height: 80px;"></td><td>0</td></tr>
+              <tr><td><img src="imglol/teams/downs.webp" class="img-fluid" style="height: 80px;"></td><td>0</td></tr>
+            </tbody>
+          </table>
         </div>
 
-        <div class="col-md-4 col-sm-6">
-          <div class="card h-100">
-            <img class="card-img-top" src="imglol/teams/gruporaton.jpg" alt="Grupo Ratón">
-            <div class="card-body text-center">
-              <h3 class="card-title">Grupo Ratón</h3>
-            </div>
-          </div>
+        <!-- Grupo B -->
+        <div class="col-md-6">
+          <h3 class="text-center mb-3">Grupo B</h3>
+          <table class="table table-bordered text-center align-middle">
+            <thead class="table-dark"><tr><th>Equipo</th><th>Puntos</th></tr></thead>
+            <tbody>
+              <tr><td><img src="imglol/teams/LuffyGoofy.JPG" class="img-fluid" style="height: 80px;"></td><td>0</td></tr>
+              <tr><td><img src="imglol/teams/gragasirl.jpg" class="img-fluid" style="height: 80px;"></td><td>0</td></tr>
+              <tr><td><img src="imglol/teams/tralalero.jpg" class="img-fluid" style="height: 80px;"></td><td>0</td></tr>
+              <tr><td><img src="imglol/teams/Squad Bananin - lucas mendoza.png" class="img-fluid" style="height: 80px;"></td><td>0</td></tr>
+              <tr><td><img src="imglol/teams/rezzzicorp.jpg" class="img-fluid" style="height: 80px;"></td><td>0</td></tr>
+              <tr><td><img src="imglol/teams/BIGMAN.JPG" class="img-fluid" style="height: 80px;"></td><td>0</td></tr>
+            </tbody>
+          </table>
         </div>
-
-        <div class="col-md-4 col-sm-6">
-          <div class="card h-100">
-            <img class="card-img-top" src="imglol/teams/LuffyGoofy.JPG" alt="Luffy Goofy">
-            <div class="card-body text-center">
-              <h3 class="card-title">Luffy Goofy</h3>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 col-sm-6">
-          <div class="card h-100">
-            <img class="card-img-top" src="imglol/teams/gragasirl.jpg" alt="Gragas IRL">
-            <div class="card-body text-center">
-              <h3 class="card-title">Gragas IRL</h3>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 col-sm-6">
-          <div class="card h-100">
-            <img class="card-img-top" src="imglol/teams/PredniSona.jpg" alt="PredniSona">
-            <div class="card-body text-center">
-              <h3 class="card-title">PredniSona</h3>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 col-sm-6">
-          <div class="card h-100">
-            <img class="card-img-top" src="imglol/teams/tralalero.jpg" alt="Tralalero Tralala">
-            <div class="card-body text-center">
-              <h3 class="card-title">Tralalero Tralala</h3>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 col-sm-6">
-          <div class="card h-100">
-            <img class="card-img-top" src="imglol/teams/downs.webp" alt="Error 404: file not found">
-            <div class="card-body text-center">
-              <h3 class="card-title">Error 404: file not found</h3>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 col-sm-6">
-          <div class="card h-100">
-            <img class="card-img-top" src="imglol/teams/cristiano.jpg" alt="FANÁTICOS">
-            <div class="card-body text-center">
-              <h3 class="card-title">FANÁTICOS</h3>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 col-sm-6">
-          <div class="card h-100">
-            <img class="card-img-top" src="imglol/teams/rezzzicorp.jpg" alt="Recicorp">
-            <div class="card-body text-center">
-              <h3 class="card-title">Recicorp</h3>
-            </div>
-          </div>
-        </div>
-
 
       </div>
     </div>
   </div>
 
-  <!-- Inscripción -->
+  <!-- Reglamento -->
   <div class="container d-flex flex-grow-1 justify-content-center">
     <div class="text-center bg-white p-5 rounded-4 shadow mt-5 mb-5 w-100">
-      <h1 class="display-4 fw-bold">¿Dónde me inscribo?</h1>
+      <h1 class="display-4 fw-bold">Reglamento</h1>
       <br/>
       <p class="lead">
-        Para inscribirte, haz click en el botón de abajo y sigue las instrucciones. Asegúrate de haber leído el reglamento y tener a tu equipo listo y preparado para la competencia.
+        Asegúrate de haber leído el reglamento y tener a tu equipo listo y preparado para la competencia.
       </p>
-      <a href="https://forms.gle/BZRQJ86vK8A8Kxd78" class="btn btn-warning btn-lg mt-3" target="_blank">Inscribirse</a>
       <a href="https://docs.google.com/document/d/1L8_1rCAsB4Sz8J5ETYdFQBgVcyJHy-V26TI0p3BqpmY/edit?usp=sharing" class="btn btn-secondary btn-lg mt-3" target="_blank">Reglamento</a>
     </div>
   </div>
 
   <div id="footer-container"></div>
   <script src="footer.js"></script>
-  
+
 </body>
 </html>
