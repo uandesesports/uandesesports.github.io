@@ -15,15 +15,67 @@
       object-fit: cover;
       width: 100%;
     }
+    .row {
+  align-items: start;
+}
+
   </style>
 </head>
 <body class="background">
   <div id="navbar-container"></div>
   <script src="navbar.js"></script>
 
+  <div class="container-fluid flex-grow-1 mt-5 mb-5">
+    <div class="row">
+      
+      <!-- Sección de Noticias: visible en móvil y escritorio -->
+      <div class="col-12 col-md-2 mb-4 mt-4 mt-md-0 order-1 order-md-0">
+        <div class="bg-light h-100 p-3 shadow rounded-4 overflow-auto">
+          <h3 id="noticias" class="text-center fw-bold display-5">Últimas Noticias</h3>
+          <div class="small mt-3">
+
+            <!-- Noticia destacada -->
+            <div class="mb-3 p-2 bg-white rounded-4 shadow noticia-feature">
+              <h5 class="fw-bold text-justify">Curso La Industria de los Videojuegos, los Esports y el Gaming Marketing</h5>
+
+              <!-- Video -->
+              <div class="ratio ratio-16x9 rounded-4 overflow-hidden mb-2">
+                <iframe 
+                  src="https://www.youtube.com/embed/7WEhawzOYQ0" 
+                  title="Video de YouTube" 
+                  allowfullscreen
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+                </iframe>
+              </div>
+
+              <!-- Imagen -->
+              <img src="noticias/postgrado.png" class="img-fluid w-100 rounded-4 d-block mx-auto mb-3" alt="">
+
+              <!-- Descripción -->
+              <p class="text-justify">
+                El Curso en Negocio de los Esports y Gaming Marketing de la Facultad de Comunicación de la Universidad de los Andes
+                entrega conocimientos sólidos sobre la industria de los esports y el marketing en gaming. Los estudiantes aprenderán 
+                a gestionar equipos, desarrollar estrategias de marketing especializadas y entender nuevas tecnologías, formatos y canales 
+                de transmisión. Al finalizar, estarán preparados para ingresar a una industria en expansión, con alta demanda de profesionales especializados.
+              </p>
+
+              <!-- Botón -->
+              <div class="text-center mt-3">
+                <a href="https://postgradosuandes.cl/cursos/curso-videojuegos-esports-gaming-marketing" class="btn btn-secondary btn-lg">
+                  Ver Información
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Contenido Principal -->
+      <div class="col-12 col-md-8 order-0 order-md-1">
   <!-- Descripción -->
   <div class="container d-flex flex-grow-1 justify-content-center">
-    <div class="text-center bg-white p-5 rounded-4 shadow mt-5 mb-5 w-100">
+    <div class="text-center bg-white p-5 rounded-4 shadow mb-5 w-100">
       <h1 class="display-4 fw-bold">Torneo Valorant</h1>
       <p class="lead">Mapas Competitivos</p>
       <br/>
@@ -192,7 +244,9 @@
       <a href="https://docs.google.com/document/d/1mgdWgbJz6fGH2qiwmi1eKFxMEzGFshb9_rU8uK_lkTk/edit?usp=sharing" class="btn btn-secondary btn-lg mt-3" target="_blank">Reglamento</a>
     </div>
   </div>
-
+</div>
+</div>
+</div>
       <div id="footer-container"></div>
       <script src="footer.js"></script>
 </body>

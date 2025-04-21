@@ -15,15 +15,66 @@
       object-fit: cover;
       width: 100%;
     }
+    .row {
+  align-items: start;
+}
+
   </style>
 </head>
 <body class="background">
   <div id="navbar-container"></div>
   <script src="navbar.js"></script>
 
+  <div class="container-fluid flex-grow-1 mt-5 mb-5">
+    <div class="row">
+      
+      <!-- Sección de Noticias: visible en móvil y escritorio -->
+      <div class="col-12 col-md-2 mb-4 mt-4 mt-md-0 order-1 order-md-0">
+        <div class="bg-light h-100 p-3 shadow rounded-4 overflow-auto">
+          <h3 id="noticias" class="text-center fw-bold display-5">Últimas Noticias</h3>
+          <div class="small mt-3">
+
+            <!-- Noticia destacada -->
+            <div class="mb-3 p-2 bg-white rounded-4 shadow noticia-feature">
+              <h5 class="fw-bold text-justify">Curso La Industria de los Videojuegos, los Esports y el Gaming Marketing</h5>
+
+              <!-- Video -->
+              <div class="ratio ratio-16x9 rounded-4 overflow-hidden mb-2">
+                <iframe 
+                  src="https://www.youtube.com/embed/7WEhawzOYQ0" 
+                  title="Video de YouTube" 
+                  allowfullscreen
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+                </iframe>
+              </div>
+
+              <!-- Imagen -->
+              <img src="noticias/postgrado.png" class="img-fluid w-100 rounded-4 d-block mx-auto mb-3" alt="">
+
+              <!-- Descripción -->
+              <p class="text-justify">
+                El Curso en Negocio de los Esports y Gaming Marketing de la Facultad de Comunicación de la Universidad de los Andes
+                entrega conocimientos sólidos sobre la industria de los esports y el marketing en gaming. Los estudiantes aprenderán 
+                a gestionar equipos, desarrollar estrategias de marketing especializadas y entender nuevas tecnologías, formatos y canales 
+                de transmisión. Al finalizar, estarán preparados para ingresar a una industria en expansión, con alta demanda de profesionales especializados.
+              </p>
+
+              <!-- Botón -->
+              <div class="text-center mt-3">
+                <a href="https://postgradosuandes.cl/cursos/curso-videojuegos-esports-gaming-marketing" class="btn btn-secondary btn-lg">
+                  Ver Información
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    
   <!-- Descripción -->
+  <div class="col-12 col-md-8 order-0 order-md-1">
   <div class="container d-flex flex-grow-1 justify-content-center">
-    <div class="text-center bg-white p-5 rounded-4 shadow mt-5 mb-5 w-100">
+    <div class="text-center bg-white p-5 rounded-4 shadow mb-5 w-100">
       <h1 class="display-4 fw-bold">Torneo Age Of Empires II</h1>
       <p class="lead">Todos contra todos</p>
       <br/>
@@ -36,19 +87,111 @@
     </div>
   </div>
 
+<!-- Tabla de puntos -->
+<div id="tabla-puntos" class="container d-flex justify-content-center">
+  <div class="bg-white p-5 rounded-4 shadow mt-5 mb-5 w-100">
+    <h1 class="display-5 fw-bold text-center mb-4">Tabla de Puntos</h1>
+    <div class="row justify-content-center g-5">
+
+      <!-- Grupo A -->
+      <div class="col-md-6">
+        <h3 class="text-center mb-3">Grupo A</h3>
+        <table class="table table-bordered text-center align-middle">
+          <thead class="table-dark"><tr><th>Equipo</th><th>Puntos</th></tr></thead>
+          <tbody>
+            <tr><td>Blackweb2004</td><td>0</td></tr>
+            <tr><td>Walter</td><td>0</td></tr>
+            <tr><td>skrrrtt1st</td><td>0</td></tr>
+            <tr><td>Lowen</td><td>0</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Grupo B -->
+      <div class="col-md-6">
+        <h3 class="text-center mb-3">Grupo B</h3>
+        <table class="table table-bordered text-center align-middle">
+          <thead class="table-dark"><tr><th>Equipo</th><th>Puntos</th></tr></thead>
+          <tbody>
+            <tr><td>Mercao</td><td>0</td></tr>
+            <tr><td>Wiim3<td>0</td></tr>
+            <tr><td>SebaSSJ<td>0</td></tr>
+            <tr><td>Pituly</td><td>0</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- Fixture semanal -->
+<div class="container d-flex justify-content-center">
+  <div class="bg-white p-5 rounded-4 shadow mt-5 mb-5 w-100">
+    <h1 class="display-5 fw-bold text-center mb-4">Fixture Semanal - 1v1</h1>
+
+    <div class="row">
+      <!-- Semana 1 -->
+      <div class="col-md-6">
+        <h4 class="text-center mb-3">Semana 1 (21/04 - 27/04)</h4>
+        <ul class="list-group mb-4">
+          <li class="list-group-item text-center fw-bold bg-body-secondary">Grupo 1</li>
+          <li class="list-group-item text-center">Blackweb2004 vs skrrrtt1st</li>
+          <li class="list-group-item text-center">Walter vs Lowen</li>
+        </ul>
+        <ul class="list-group mb-4">
+          <li class="list-group-item text-center fw-bold bg-body-secondary">Grupo 2</li>
+          <li class="list-group-item text-center">Mercao vs Wiim3</li>
+          <li class="list-group-item text-center">SebaSSJ vs Pituly</li>
+        </ul>
+      </div>
+
+      <!-- Semana 2 -->
+      <div class="col-md-6">
+        <h4 class="text-center mb-3">Semana 2 (28/04 - 05/05)</h4>
+        <ul class="list-group mb-4">
+          <li class="list-group-item text-center fw-bold bg-body-secondary">Grupo 1</li>
+          <li class="list-group-item text-center">Blackweb2004 vs Walter</li>
+          <li class="list-group-item text-center">skrrrtt1st vs Lowen</li>
+        </ul>
+        <ul class="list-group mb-4">
+          <li class="list-group-item text-center fw-bold bg-body-secondary">Grupo 2</li>
+          <li class="list-group-item text-center">Mercao vs SebaSSJ</li>
+          <li class="list-group-item text-center">Wiim3 vs Pituly</li>
+        </ul>
+      </div>
+
+      <!-- Semana 3 -->
+      <div class="col-md-6">
+        <h4 class="text-center mb-3">Semana 3 (05/05 - 11/05)</h4>
+        <ul class="list-group mb-4">
+          <li class="list-group-item text-center fw-bold bg-body-secondary">Grupo 1</li>
+          <li class="list-group-item text-center">Blackweb2004 vs Lowen</li>
+          <li class="list-group-item text-center">skrrrtt1st vs Walter</li>
+        </ul>
+        <ul class="list-group mb-4">
+          <li class="list-group-item text-center fw-bold bg-body-secondary">Grupo 2</li>
+          <li class="list-group-item text-center">Mercao vs Pituly</li>
+          <li class="list-group-item text-center">Wiim3 vs SebaSSJ</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
   <!-- Inscripción -->
   <div class="container d-flex flex-grow-1 justify-content-center">
     <div class="text-center bg-white p-5 rounded-4 shadow mt-5 mb-5 w-100">
-      <h1 class="display-4 fw-bold">¿Dónde me inscribo?</h1>
+      <h1 class="display-4 fw-bold">Reglamento</h1>
       <br/>
       <p class="lead">
-        Para inscribirte, haz click en el botón de abajo y sigue las instrucciones. Asegúrate de haber leído el reglamento y estar listo y preparado para la competencia.
+        Asegúrate de haber leído el reglamento y tener a tu equipo listo y preparado para la competencia.
       </p>
-      <a href="https://forms.gle/HCgZSDRmoeeYMh2u6" class="btn btn-warning btn-lg mt-3" target="_blank">Inscribirse</a>
       <a href="https://docs.google.com/document/d/1DXEPUAKV-vUs4YVNiqugVf0VYD8vTBqnJ_723c5Poyw/edit?usp=sharing" class="btn btn-secondary btn-lg mt-3" target="_blank">Reglamento</a>
     </div>
   </div>
-
+    </div>
+  </div>
+  </div>
   <div id="footer-container"></div>
   <script src="footer.js"></script>
   
