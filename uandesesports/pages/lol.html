@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UANDES Esports</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+      width: 100%;
+    }
+    .row {
+  align-items: start;
+}
+
+  </style>
+</head>
+<body class="background">
+
+  <div id="navbar-container"></div>
+  <script src="navbar.js"></script>
+
+  <div class="container-fluid flex-grow-1 mt-5 mb-5">
+    <div class="row">
+      
+      <!-- Sección de Noticias: visible en móvil y escritorio -->
+      <div class="col-12 col-md-2 mb-4 mt-4 mt-md-0 order-1 order-md-0">
+        <div class="bg-light h-100 p-3 shadow rounded-4 overflow-auto">
+          <h3 id="noticias" class="text-center fw-bold display-5">Últimas Noticias</h3>
+          <div class="small mt-3">
+
+            <!-- Noticia destacada -->
+            <div class="mb-3 p-2 bg-white rounded-4 shadow noticia-feature">
+              <h5 class="fw-bold text-justify">Curso La Industria de los Videojuegos, los Esports y el Gaming Marketing</h5>
+
+              <!-- Video -->
+              <div class="ratio ratio-16x9 rounded-4 overflow-hidden mb-2">
+                <iframe 
+                  src="https://www.youtube.com/embed/7WEhawzOYQ0" 
+                  title="Video de YouTube" 
+                  allowfullscreen
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+                </iframe>
+              </div>
+
+              <!-- Imagen -->
+              <img src="noticias/postgrado.png" class="img-fluid w-100 rounded-4 d-block mx-auto mb-3" alt="">
+
+              <!-- Descripción -->
+              <p class="text-justify">
+                El Curso en Negocio de los Esports y Gaming Marketing de la Facultad de Comunicación de la Universidad de los Andes
+                entrega conocimientos sólidos sobre la industria de los esports y el marketing en gaming. Los estudiantes aprenderán 
+                a gestionar equipos, desarrollar estrategias de marketing especializadas y entender nuevas tecnologías, formatos y canales 
+                de transmisión. Al finalizar, estarán preparados para ingresar a una industria en expansión, con alta demanda de profesionales especializados.
+              </p>
+
+              <!-- Botón -->
+              <div class="text-center mt-3">
+                <a href="https://postgradosuandes.cl/cursos/curso-videojuegos-esports-gaming-marketing" class="btn btn-secondary btn-lg">
+                  Ver Información
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Contenido Principal -->
+      <div class="col-12 col-md-8 order-0 order-md-1">
+
+  <!-- Descripción -->
+  <div class="container d-flex flex-grow-1 justify-content-center">
+    <div class="text-center bg-white p-5 rounded-4 shadow mb-5 w-100">
+      <h1 class="display-4 fw-bold">Torneo League of Legends</h1>
+      <p class="lead">Grieta del Invocador 5v5</p>
+      <br/>
+      <h2 class="text-center mb-4">Descripción</h2>
+      <p class="lead">
+        ¡Bienvenidos al Torneo de League of Legends! Este evento está diseñado para todos los estudiantes de la Universidad de los Andes que deseen demostrar sus habilidades en la Grieta del Invocador. 
+        Forma tu equipo y prepárate para competir por la gloria y premios increíbles.
+      </p>
+      <br/>
+      <!-- BOTÓN CENTRADO ENCIMA DE LA IMAGEN -->
+<div class="text-center mb-4">
+  <a href="#tabla-puntos" class="btn btn-primary btn-lg">Ver Tabla de Puntos</a>
+</div>
+<img src="imglol/lol.jpeg" class="img-fluid">
+    </div>
+  </div>
+
+  <!-- Equipos inscritos -->
+  <div class="container d-flex flex-grow-1 justify-content-center">
+    <div class="text-center bg-white p-5 rounded-4 shadow mt-5 mb-5 w-100">
+      <h1 class="display-4 fw-bold">Equipos inscritos</h1>
+      <p class="lead">Para esta edición nos acompañan:</p>
+      <br/>
+      <div class="row justify-content-center g-4">
+        <!-- 12 tarjetas de equipo -->
+        <div class="col-md-4 col-sm-6"><div class="card h-100"><img class="card-img-top" src="imglol/teams/capywara.png" alt="Capywara"><div class="card-body text-center"><h3 class="card-title">Capywara</h3></div></div></div>
+        <div class="col-md-4 col-sm-6"><div class="card h-100"><img class="card-img-top" src="imglol/teams/gruporaton.jpg" alt="Grupo Ratón"><div class="card-body text-center"><h3 class="card-title">Grupo Ratón</h3></div></div></div>
+        <div class="col-md-4 col-sm-6"><div class="card h-100"><img class="card-img-top" src="imglol/teams/LuffyGoofy.JPG" alt="Luffy Goofy"><div class="card-body text-center"><h3 class="card-title">Luffy Goofy</h3></div></div></div>
+        <div class="col-md-4 col-sm-6"><div class="card h-100"><img class="card-img-top" src="imglol/teams/gragasirl.jpg" alt="Gragas IRL"><div class="card-body text-center"><h3 class="card-title">Gragas IRL</h3></div></div></div>
+        <div class="col-md-4 col-sm-6"><div class="card h-100"><img class="card-img-top" src="imglol/teams/PredniSona.jpg" alt="PredniSona"><div class="card-body text-center"><h3 class="card-title">PredniSona</h3></div></div></div>
+        <div class="col-md-4 col-sm-6"><div class="card h-100"><img class="card-img-top" src="imglol/teams/tralalero.jpg" alt="Tralalero Tralala"><div class="card-body text-center"><h3 class="card-title">Tralalero Tralala</h3></div></div></div>
+        <div class="col-md-4 col-sm-6"><div class="card h-100"><img class="card-img-top" src="imglol/teams/downs.webp" alt="Error 404"><div class="card-body text-center"><h3 class="card-title">Error 404: file not found</h3></div></div></div>
+        <div class="col-md-4 col-sm-6"><div class="card h-100"><img class="card-img-top" src="imglol/teams/cristiano.jpg" alt="FANÁTICOS"><div class="card-body text-center"><h3 class="card-title">FANÁTICOS</h3></div></div></div>
+        <div class="col-md-4 col-sm-6"><div class="card h-100"><img class="card-img-top" src="imglol/teams/rezzzicorp.jpg" alt="Recicorp"><div class="card-body text-center"><h3 class="card-title">Recicorp</h3></div></div></div>
+        <div class="col-md-4 col-sm-6"><div class="card h-100"><img class="card-img-top" src="imglol/teams/Squad Bananin - lucas mendoza.png" alt="Squad Bananin"><div class="card-body text-center"><h3 class="card-title">Squad Bananin</h3></div></div></div>
+        <div class="col-md-4 col-sm-6"><div class="card h-100"><img class="card-img-top" src="imglol/teams/T2.png" alt="T2"><div class="card-body text-center"><h3 class="card-title">T2</h3></div></div></div>
+        <div class="col-md-4 col-sm-6"><div class="card h-100"><img class="card-img-top" src="imglol/teams/BIGMAN.JPG" alt="BIGMAN BLASTOISE"><div class="card-body text-center"><h3 class="card-title">BIGMAN BLASTOISE</h3></div></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tabla de puntos -->
+  <div id="tabla-puntos" class="container d-flex justify-content-center">
+    <div class="bg-white p-5 rounded-4 shadow mt-5 mb-5 w-100">
+      <h1 class="display-5 fw-bold text-center mb-4">Tabla de Puntos</h1>
+      <div class="row justify-content-center g-5">
+
+        <!-- Grupo A -->
+        <div class="col-md-6">
+          <h3 class="text-center mb-3">Grupo A</h3>
+          <table class="table table-bordered text-center align-middle">
+            <thead class="table-dark"><tr><th>Equipo</th><th>Puntos</th></tr></thead>
+            <tbody>
+              <tr><td><img src="imglol/teams/PredniSona.jpg" class="img-fluid" style="height: 80px;"></td><td>1</td></tr>
+              <tr><td><img src="imglol/teams/cristiano.jpg" class="img-fluid" style="height: 80px;"></td><td>1</td></tr>
+              <tr><td><img src="imglol/teams/gruporaton.jpg" class="img-fluid" style="height: 80px;"></td><td>0</td></tr>
+              <tr><td><img src="imglol/teams/capywara.png" class="img-fluid" style="height: 80px;"></td><td>0</td></tr>
+              <tr><td><img src="imglol/teams/T2.png" class="img-fluid" style="height: 80px;"></td><td>0</td></tr>
+              <tr><td><img src="imglol/teams/downs.webp" class="img-fluid" style="height: 80px;"></td><td>0</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Grupo B -->
+        <div class="col-md-6">
+          <h3 class="text-center mb-3">Grupo B</h3>
+          <table class="table table-bordered text-center align-middle">
+            <thead class="table-dark"><tr><th>Equipo</th><th>Puntos</th></tr></thead>
+            <tbody>
+              <tr><td><img src="imglol/teams/gragasirl.jpg" class="img-fluid" style="height: 80px;"></td><td>1</td></tr>
+              <tr><td><img src="imglol/teams/LuffyGoofy.JPG" class="img-fluid" style="height: 80px;"></td><td>0</td></tr>
+              <tr><td><img src="imglol/teams/tralalero.jpg" class="img-fluid" style="height: 80px;"></td><td>0</td></tr>
+              <tr><td><img src="imglol/teams/Squad Bananin - lucas mendoza.png" class="img-fluid" style="height: 80px;"></td><td>0</td></tr>
+              <tr><td><img src="imglol/teams/rezzzicorp.jpg" class="img-fluid" style="height: 80px;"></td><td>0</td></tr>
+              <tr><td><img src="imglol/teams/BIGMAN.JPG" class="img-fluid" style="height: 80px;"></td><td>0</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+<!-- Fixture semanal -->
+<div class="container d-flex justify-content-center">
+  <div class="bg-white p-5 rounded-4 shadow mt-5 mb-5 w-100">
+    <h1 class="display-5 fw-bold text-center mb-4">Enfrentamientos Semanales</h1>
+
+    <div class="row">
+      <!-- Semana 1 -->
+      <div class="col-md-6">
+        <h4 class="text-center mb-3">Semana 1 (Lunes 21/04)</h4>
+        <ul class="list-group mb-4">
+          <li class="list-group-item text-center fw-bold bg-body-secondary">Grupo A</li>
+          <li class="list-group-item text-center">Grupo Ratón vs FANÁTICOS</li>
+          <li class="list-group-item text-center">Capywara vs Error 404</li>
+          <li class="list-group-item text-center">T2 vs PredniSona</li>
+          </ul>
+          <ul class="list-group mb-4">
+          <li class="list-group-item text-center fw-bold bg-body-secondary">Grupo B</li>
+          <li class="list-group-item text-center">Luffy Goofy vs Gragas IRL</li>
+          <li class="list-group-item text-center">Tralalero Tralala vs Squad Bananin</li>
+          <li class="list-group-item text-center">Recicorp vs BIGMAN BLASTOISE</li>
+        </ul>
+      </div>
+
+      <!-- Semana 2 -->
+      <div class="col-md-6">
+        <h4 class="text-center mb-3">Semana 2 (Lunes 28/04)</h4>
+        <ul class="list-group mb-4">
+          <li class="list-group-item text-center fw-bold bg-body-secondary">Grupo A</li>
+          <li class="list-group-item text-center">Grupo Ratón vs T2</li>
+          <li class="list-group-item text-center">Capywara vs FANÁTICOS</li>
+          <li class="list-group-item text-center">PredniSona vs Error 404</li>
+          </ul>
+          <ul class="list-group mb-4">
+          <li class="list-group-item text-center fw-bold bg-body-secondary">Grupo B</li>
+          <li class="list-group-item text-center">Luffy Goofy vs Tralalero Tralala</li>
+          <li class="list-group-item text-center">Gragas IRL vs Recicorp</li>
+          <li class="list-group-item text-center">Squad Bananin vs BIGMAN BLASTOISE</li>
+        </ul>
+      </div>
+
+      <!-- Semana 3 -->
+      <div class="col-md-6">
+        <h4 class="text-center mb-3">Semana 3 (Lunes 05/05)</h4>
+        <ul class="list-group mb-4">
+          <li class="list-group-item text-center fw-bold bg-body-secondary">Grupo A</li>
+          <li class="list-group-item text-center">Grupo Ratón vs Error 404</li>
+          <li class="list-group-item text-center">Capywara vs PredniSona</li>
+          <li class="list-group-item text-center">T2 vs FANÁTICOS</li>
+          </ul>
+          <ul class="list-group mb-4">
+          <li class="list-group-item text-center fw-bold bg-body-secondary">Grupo B</li>
+          <li class="list-group-item text-center">Luffy Goofy vs Squad Bananin</li>
+          <li class="list-group-item text-center">Gragas IRL vs BIGMAN BLASTOISE</li>
+          <li class="list-group-item text-center">Tralalero Tralala vs Recicorp</li>
+        </ul>
+      </div>
+
+      <!-- Semana 4 -->
+      <div class="col-md-6">
+        <h4 class="text-center mb-3">Semana 4 (Lunes 12/05)</h4>
+        <ul class="list-group mb-4">
+          <li class="list-group-item text-center fw-bold bg-body-secondary">Grupo A</li>
+          <li class="list-group-item text-center">Grupo Ratón vs PredniSona</li>
+          <li class="list-group-item text-center">Capywara vs T2</li>
+          <li class="list-group-item text-center">FANÁTICOS vs Error 404</li>
+         </ul>
+          <ul class="list-group mb-4">
+          <li class="list-group-item text-center fw-bold bg-body-secondary">Grupo B</li>
+          <li class="list-group-item text-center">Luffy Goofy vs Recicorp</li>
+          <li class="list-group-item text-center">Gragas IRL vs Squad Bananin</li>
+          <li class="list-group-item text-center">Tralalero Tralala vs BIGMAN BLASTOISE</li>
+        </ul>
+      </div>
+
+      <!-- Semana 5 -->
+      <div class="col-md-12">
+        <h4 class="text-center mb-3">Semana 5 (Lunes 19/05)</h4>
+        <ul class="list-group mb-4">
+          <li class="list-group-item text-center fw-bold bg-body-secondary">Grupo A</li>
+          <li class="list-group-item text-center">Grupo Ratón vs Capywara</li>
+          <li class="list-group-item text-center">T2 vs Error 404</li>
+          <li class="list-group-item text-center">PredniSona vs FANÁTICOS</li>
+          </ul>
+          <ul class="list-group mb-4">
+          <li class="list-group-item text-center fw-bold bg-body-secondary">Grupo B</li>
+          <li class="list-group-item text-center">Luffy Goofy vs BIGMAN BLASTOISE</li>
+          <li class="list-group-item text-center">Gragas IRL vs Tralalero Tralala</li>
+          <li class="list-group-item text-center">Squad Bananin vs Recicorp</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+  <!-- Reglamento -->
+  <div class="container d-flex flex-grow-1 justify-content-center">
+    <div class="text-center bg-white p-5 rounded-4 shadow mt-5 mb-5 w-100">
+      <h1 class="display-4 fw-bold">Reglamento</h1>
+      <br/>
+      <p class="lead">
+        Asegúrate de haber leído el reglamento y tener a tu equipo listo y preparado para la competencia.
+      </p>
+      <a href="https://docs.google.com/document/d/1L8_1rCAsB4Sz8J5ETYdFQBgVcyJHy-V26TI0p3BqpmY/edit?usp=sharing" class="btn btn-secondary btn-lg mt-3" target="_blank">Reglamento</a>
+    </div>
+  </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer-container"></div>
+  <script src="footer.js"></script>
+
+</body>
+</html>

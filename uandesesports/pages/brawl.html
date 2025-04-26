@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UANDES Esports</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    /* ✅ Estilo aplicado a todas las imágenes de tarjeta */
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+      width: 100%;
+    }
+    .row {
+  align-items: start;
+}
+
+  </style>
+</head>
+<body class="background">
+  <div id="navbar-container"></div>
+  <script src="navbar.js"></script>
+
+  <div class="container-fluid flex-grow-1 mt-5 mb-5">
+    <div class="row">
+      
+      <!-- Sección de Noticias: visible en móvil y escritorio -->
+      <div class="col-12 col-md-2 mb-4 mt-4 mt-md-0 order-1 order-md-0">
+        <div class="bg-light h-100 p-3 shadow rounded-4 overflow-auto">
+          <h3 id="noticias" class="text-center fw-bold display-5">Últimas Noticias</h3>
+          <div class="small mt-3">
+
+            <!-- Noticia destacada -->
+            <div class="mb-3 p-2 bg-white rounded-4 shadow noticia-feature">
+              <h5 class="fw-bold text-justify">Curso La Industria de los Videojuegos, los Esports y el Gaming Marketing</h5>
+
+              <!-- Video -->
+              <div class="ratio ratio-16x9 rounded-4 overflow-hidden mb-2">
+                <iframe 
+                  src="https://www.youtube.com/embed/7WEhawzOYQ0" 
+                  title="Video de YouTube" 
+                  allowfullscreen
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+                </iframe>
+              </div>
+
+              <!-- Imagen -->
+              <img src="noticias/postgrado.png" class="img-fluid w-100 rounded-4 d-block mx-auto mb-3" alt="">
+
+              <!-- Descripción -->
+              <p class="text-justify">
+                El Curso en Negocio de los Esports y Gaming Marketing de la Facultad de Comunicación de la Universidad de los Andes
+                entrega conocimientos sólidos sobre la industria de los esports y el marketing en gaming. Los estudiantes aprenderán 
+                a gestionar equipos, desarrollar estrategias de marketing especializadas y entender nuevas tecnologías, formatos y canales 
+                de transmisión. Al finalizar, estarán preparados para ingresar a una industria en expansión, con alta demanda de profesionales especializados.
+              </p>
+
+              <!-- Botón -->
+              <div class="text-center mt-3">
+                <a href="https://postgradosuandes.cl/cursos/curso-videojuegos-esports-gaming-marketing" class="btn btn-secondary btn-lg">
+                  Ver Información
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Contenido Principal -->
+      <div class="col-12 col-md-8 order-0 order-md-1">
+
+  <!-- Descripción -->
+  <div class="container d-flex flex-grow-1 justify-content-center">
+    <div class="text-center bg-white p-5 rounded-4 shadow mb-5 w-100">
+      <h1 class="display-4 fw-bold">Torneo Brawl Stars</h1>
+      <p class="lead">Diferentes Modos</p>
+      <br/>
+      <h2 class="text-center mb-4">Descripción</h2>
+      <p class="lead">
+        ¡Bienvenidos al Torneo de Brawl Stars! Este evento está diseñado para todos los estudiantes de la Universidad de los Andes que deseen demostrar sus habilidades en el juego. 
+        <br/>
+        Forma tu equipo y prepárate para competir por la gloria y premios increíbles. El torneo se llevará a cabo en diferentes modos de juego, así que asegúrate de estar listo para cualquier desafío que se presente.
+      </p>
+      <br/>
+      <div class="text-center mb-4">
+        <a href="#tabla-puntos" class="btn btn-primary btn-lg">Ver Tabla de Puntos</a>
+      </div>
+      <img src="imgbrawl/brawl-stars-4k-rjeqom9wpmvdub2i.jpg" class="img-fluid mt-4">
+    </div>
+  </div>
+
+  <!-- Equipos inscritos -->
+  <div class="container d-flex flex-grow-1 justify-content-center">
+    <div class="text-center bg-white p-5 rounded-4 shadow mt-5 mb-5 w-100">
+      <h1 class="display-4 fw-bold">Equipos inscritos</h1>
+      <p class="lead">Para esta edición nos acompañan:</p>
+      <br/>
+      <div class="row justify-content-center g-4">
+
+        <div class="col-md-4 col-sm-6">
+          <div class="card h-100">
+            <img class="card-img-top" src="imgbrawl/teams/international.jpg" alt="International Brawlers">
+            <div class="card-body text-center">
+              <h3 class="card-title">International Brawlers</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="card h-100">
+            <img class="card-img-top" src="imgbrawl/teams/AFK_Gang_Logo - Matías Kupfer Novoa(1).jpg" alt="AFK Gang">
+            <div class="card-body text-center">
+              <h3 class="card-title">AFK Gang</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="card h-100">
+            <img class="card-img-top" src="imgbrawl/teams/phantom.webp" alt="Phantom Threats">
+            <div class="card-body text-center">
+              <h3 class="card-title">Phantom Threats</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="card h-100">
+            <img class="card-img-top" src="imgbrawl/teams/Tilines.jpg" alt="Los Tilines PRIME">
+            <div class="card-body text-center">
+              <h3 class="card-title">Los Tilines PRIME</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="card h-100">
+            <img class="card-img-top" src="imgbrawl/teams/Palta.webp" alt="Palta Stars">
+            <div class="card-body text-center">
+              <h3 class="card-title">Palta Stars</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="card h-100">
+            <img class="card-img-top" src="imgbrawl/teams/Tercio.jpg" alt="El Mal Tercio">
+            <div class="card-body text-center">
+              <h3 class="card-title">El Mal Tercio</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="card h-100">
+            <img class="card-img-top" src="imgbrawl/teams/landscape_comp - Matías Kupfer Novoa.jpeg" alt="Bombardiro Tralala">
+            <div class="card-body text-center">
+              <h3 class="card-title">Bombardiro Tralala</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="card h-100">
+            <img class="card-img-top" src="imgbrawl/teams/chestersaurios.jpeg" alt="Chestersaurios">
+            <div class="card-body text-center">
+              <h3 class="card-title">Chestersaurios</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="card h-100">
+            <img class="card-img-top" src="imgbrawl/teams/chato.jpeg" alt="Los amigos del Chato">
+            <div class="card-body text-center">
+              <h3 class="card-title">Los amigos del Chato</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="card h-100">
+            <img class="card-img-top" src="imgbrawl/teams/grupóvich.jpg" alt="Grupovich">
+            <div class="card-body text-center">
+              <h3 class="card-title">Grupovich</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="card h-100">
+            <img class="card-img-top" src="imgbrawl/teams/m16.jpg" alt="M16">
+            <div class="card-body text-center">
+              <h3 class="card-title">M-16</h3>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Tabla de puntos -->
+  <div id="tabla-puntos" class="container d-flex justify-content-center">
+    <div class="bg-white p-5 rounded-4 shadow mt-5 mb-5 w-100">
+      <h1 class="display-5 fw-bold text-center mb-4">Tabla de Puntos</h1>
+      <div class="row justify-content-center g-5">
+
+        <!-- Grupo A -->
+        <div class="col-md-6">
+          <h3 class="text-center mb-3">Grupo A</h3>
+          <table class="table table-bordered text-center align-middle">
+            <thead class="table-dark"><tr><th>Equipo</th><th>Puntos</th></tr></thead>
+            <tbody>
+              <tr><td><img src="imgbrawl/teams/international.jpg" class="img-fluid" style="height: 80px;"></td><td>0</td></tr>
+              <tr><td><img src="imgbrawl/teams/phantom.webp" class="img-fluid" style="height: 80px;"></td><td>0</td></tr>
+              <tr><td><img src="imgbrawl/teams/grupóvich.jpg" class="img-fluid" style="height: 80px;"></td><td>0</td></tr>
+              <tr><td><img src="imgbrawl/teams/m16.jpg" class="img-fluid" style="height: 80px;width: 80px;"></td><td>0</td></tr>
+              <tr><td><img src="imgbrawl/teams/Tilines.jpg" class="img-fluid" style="height: 80px;"></td><td>1</td></tr>
+              <tr><td><img src="imgbrawl/teams/landscape_comp - Matías Kupfer Novoa.jpeg" class="img-fluid" style="height: 80px; width: 80px;"></td><td>0</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Grupo B -->
+        <div class="col-md-6">
+          <h3 class="text-center mb-3">Grupo B</h3>
+          <table class="table table-bordered text-center align-middle">
+            <thead class="table-dark"><tr><th>Equipo</th><th>Puntos</th></tr></thead>
+            <tbody>
+              <tr><td><img src="imgbrawl/teams/AFK_Gang_Logo - Matías Kupfer Novoa(1).jpg" class="img-fluid" style="height: 80px;"></td><td>0</td></tr>
+              <tr><td><img src="imgbrawl/teams/Tercio.jpg" class="img-fluid" style="height: 80px;"></td><td>0</td></tr>
+              <tr><td><img src="imgbrawl/teams/chestersaurios.jpeg" class="img-fluid" style="height: 80px;"></td><td>0</td></tr>
+              <tr><td><img src="imgbrawl/teams/chato.jpeg" class="img-fluid" style="height: 80px;"></td><td>0</td></tr>
+              <tr><td><img src="imgbrawl/teams/Palta.webp" class="img-fluid" style="height: 80px;"></td><td>0</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Fixture semanal -->
+<div class="container d-flex justify-content-center">
+  <div class="bg-white p-5 rounded-4 shadow mt-5 mb-5 w-100">
+    <h1 class="display-5 fw-bold text-center mb-4">Enfrentamientos Semanales</h1>
+
+    <div class="row">
+      <!-- Semana 1 -->
+      <div class="col-md-6">
+        <h4 class="text-center mb-3">Semana 1 (Lunes 21/04)</h4>
+        <ul class="list-group mb-4">
+          <li class="list-group-item text-center fw-bold bg-body-secondary">Grupo A</li>
+          <li class="list-group-item text-center">International Brawlers vs Phantom Threats</li>
+          <li class="list-group-item text-center">Grupovich vs M-16</li>
+          <li class="list-group-item text-center">Los Tilines PRIME vs Bombardiro Tralala</li>
+        </ul>
+        <ul class="list-group mb-4">
+          <li class="list-group-item text-center fw-bold bg-body-secondary">Grupo B</li>
+          <li class="list-group-item text-center">AFK Gang vs El Mal Tercio</li>
+          <li class="list-group-item text-center">Chestersaurios vs Los amigos del Chato</li>
+          <li class="list-group-item text-center text-muted">Descansa: Palta Stars</li>
+        </ul>
+      </div>
+
+      <!-- Semana 2 -->
+      <div class="col-md-6">
+        <h4 class="text-center mb-3">Semana 2 (Lunes 28/04)</h4>
+        <ul class="list-group mb-4">
+          <li class="list-group-item text-center fw-bold bg-body-secondary">Grupo A</li>
+          <li class="list-group-item text-center">International Brawlers vs Grupovich</li>
+          <li class="list-group-item text-center">Phantom Threats vs Los Tilines PRIME</li>
+          <li class="list-group-item text-center">M-16 vs Bombardiro Tralala</li>
+        </ul>
+        <ul class="list-group mb-4">
+          <li class="list-group-item text-center fw-bold bg-body-secondary">Grupo B</li>
+          <li class="list-group-item text-center">Palta Stars vs Chestersaurios</li>
+          <li class="list-group-item text-center">El Mal Tercio vs Los amigos del Chato</li>
+          <li class="list-group-item text-center text-muted">Descansa: AFK Gang</li>
+        </ul>
+      </div>
+
+      <!-- Semana 3 -->
+      <div class="col-md-6">
+        <h4 class="text-center mb-3">Semana 3 (Lunes 05/05)</h4>
+        <ul class="list-group mb-4">
+          <li class="list-group-item text-center fw-bold bg-body-secondary">Grupo A</li>
+          <li class="list-group-item text-center">International Brawlers vs M-16</li>
+          <li class="list-group-item text-center">Grupovich vs Los Tilines PRIME</li>
+          <li class="list-group-item text-center">Phantom Threats vs Bombardiro Tralala</li>
+        </ul>
+        <ul class="list-group mb-4">
+          <li class="list-group-item text-center fw-bold bg-body-secondary">Grupo B</li>
+          <li class="list-group-item text-center">AFK Gang vs Los amigos del Chato</li>
+          <li class="list-group-item text-center">Palta Stars vs El Mal Tercio</li>
+          <li class="list-group-item text-center text-muted">Descansa: Chestersaurios</li>
+        </ul>
+      </div>
+
+      <!-- Semana 4 -->
+      <div class="col-md-6">
+        <h4 class="text-center mb-3">Semana 4 (Lunes 12/05)</h4>
+        <ul class="list-group mb-4">
+          <li class="list-group-item text-center fw-bold bg-body-secondary">Grupo A</li>
+          <li class="list-group-item text-center">International Brawlers vs Los Tilines PRIME</li>
+          <li class="list-group-item text-center">Grupovich vs Bombardiro Tralala</li>
+          <li class="list-group-item text-center">Phantom Threats vs M-16</li>
+        </ul>
+        <ul class="list-group mb-4">
+          <li class="list-group-item text-center fw-bold bg-body-secondary">Grupo B</li>
+          <li class="list-group-item text-center">Chestersaurios vs El Mal Tercio</li>
+          <li class="list-group-item text-center">Palta Stars vs AFK Gang</li>
+          <li class="list-group-item text-center text-muted">Descansa: Los amigos del Chato</li>
+        </ul>
+      </div>
+
+      <!-- Semana 5 -->
+      <div class="col-md-12">
+        <h4 class="text-center mb-3">Semana 5 (Lunes 19/05)</h4>
+        <ul class="list-group mb-4">
+          <li class="list-group-item text-center fw-bold bg-body-secondary">Grupo A</li>
+          <li class="list-group-item text-center">International Brawlers vs Bombardiro Tralala</li>
+          <li class="list-group-item text-center">Grupovich vs Phantom Threats</li>
+          <li class="list-group-item text-center">M-16 vs Los Tilines PRIME</li>
+        </ul>
+        <ul class="list-group mb-4">
+          <li class="list-group-item text-center fw-bold bg-body-secondary">Grupo B</li>
+          <li class="list-group-item text-center">Chestersaurios vs AFK Gang</li>
+          <li class="list-group-item text-center">Palta Stars vs Los amigos del Chato</li>
+          <li class="list-group-item text-center text-muted">Descansa: El Mal Tercio</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Inscripción -->
+  <div class="container d-flex flex-grow-1 justify-content-center">
+    <div class="text-center bg-white p-5 rounded-4 shadow mt-5 mb-5 w-100">
+      <h1 class="display-4 fw-bold">Reglamento</h1>
+      <br/>
+      <p class="lead">
+        Asegúrate de haber leído el reglamento y tener a tu equipo listo y preparado para la competencia.
+      </p>
+      <a href="https://docs.google.com/document/d/1il_OJYvVFd_XvcPOSDuisGK97wC4t8MUHsKZlkbhvL0/edit?usp=sharing" class="btn btn-secondary btn-lg mt-3" target="_blank">Reglamento</a>
+    </div>
+  </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer-container"></div>
+  <script src="footer.js"></script>
+  
+</body>
+</html>

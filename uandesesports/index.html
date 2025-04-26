@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UANDES Esports</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .noticia-video iframe {
+      border-radius: 12px;
+    }
+    .noticia-card img {
+      border-radius: 12px 12px 0 0;
+    }
+    .noticia-card h6 {
+      font-size: 0.9rem;
+    }
+    .row {
+  align-items: start;
+}
+
+  </style>
+</head>
+<body class="background min-vh-100 d-flex flex-column">
+
+  <div id="navbar-container"></div>
+  <script src="navbar.js"></script>
+
+  <div class="container-fluid flex-grow-1 mt-5 mb-5">
+    <div class="row">
+      
+      <!-- Sección de Noticias: visible en móvil y escritorio -->
+      <div class="col-12 col-md-2 mb-4 mt-4 mt-md-0 order-1 order-md-0">
+        <div class="bg-light h-100 p-3 shadow rounded-4 overflow-auto">
+          <h3 id="noticias" class="text-center fw-bold display-5">Últimas Noticias</h3>
+          <div class="small mt-3">
+
+            <!-- Noticia destacada -->
+            <div class="mb-3 p-2 bg-white rounded-4 shadow noticia-feature">
+              <h5 class="fw-bold text-justify">Curso La Industria de los Videojuegos, los Esports y el Gaming Marketing</h5>
+
+              <!-- Video -->
+              <div class="ratio ratio-16x9 rounded-4 overflow-hidden mb-2">
+                <iframe 
+                  src="https://www.youtube.com/embed/7WEhawzOYQ0" 
+                  title="Video de YouTube" 
+                  allowfullscreen
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+                </iframe>
+              </div>
+
+              <!-- Imagen -->
+              <img src="noticias/postgrado.png" class="img-fluid w-100 rounded-4 d-block mx-auto mb-3" alt="">
+
+              <!-- Descripción -->
+              <p class="text-justify">
+                El Curso en Negocio de los Esports y Gaming Marketing de la Facultad de Comunicación de la Universidad de los Andes
+                entrega conocimientos sólidos sobre la industria de los esports y el marketing en gaming. Los estudiantes aprenderán 
+                a gestionar equipos, desarrollar estrategias de marketing especializadas y entender nuevas tecnologías, formatos y canales 
+                de transmisión. Al finalizar, estarán preparados para ingresar a una industria en expansión, con alta demanda de profesionales especializados.
+              </p>
+
+              <!-- Botón -->
+              <div class="text-center mt-3">
+                <a href="https://postgradosuandes.cl/cursos/curso-videojuegos-esports-gaming-marketing" class="btn btn-secondary btn-lg">
+                  Ver Información
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Contenido Principal -->
+      <div class="col-12 col-md-8 order-0 order-md-1">
+        <div class="text-center bg-white p-5 rounded-4 shadow">
+          <h1 class="display-4 fw-bold">¡Bienvenidos a UANDES Esports!</h1>
+          <p class="lead">Torneos, comunidad y pasión gamer desde la Universidad de los Andes</p>
+
+          <div class="text-center my-3">
+            <a href="#noticias" class="btn btn-outline-dark btn-lg">
+              📢 Ver Últimas Noticias
+            </a>
+          </div>
+          
+
+          <div class="container">
+            <h2 class="text-center mb-4">Torneos Actuales 🏆</h2>
+            <br/>
+            <div class="row g-4">
+
+              <!-- Torneo LoL -->
+              <div class="col-12">
+                <div class="card bg-light text-dark rounded-4 overflow-hidden">
+                  <img src="lolbanne.jpg" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Torneo de LoL">
+                  <div class="card-body">
+                    <h5 class="card-title">League of Legends</h5>
+                    <p class="card-text">¡Información del torneo aquí!</p>
+                    <a href="/pages/lol.html" class="btn btn-warning btn-lg mt-3">Ver Información</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Torneo Brawl Stars -->
+              <div class="col-12">
+                <div class="card bg-light text-dark rounded-4 overflow-hidden">
+                  <img src="brawlbanner.webp" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Torneo de Brawl Stars">
+                  <div class="card-body">
+                    <h5 class="card-title">Brawl Stars</h5>
+                    <p class="card-text">¡Información del torneo aquí!</p>
+                    <a href="/pages/brawl.html" class="btn btn-warning btn-lg mt-3">Ver Información</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Torneo Valorant -->
+              <div class="col-12">
+                <div class="card bg-light text-dark rounded-4 overflow-hidden">
+                  <img src="4k-Valorant-Agents-4K-Wallpaper.jpg" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Torneo de Valorant">
+                  <div class="card-body">
+                    <h5 class="card-title">Valorant</h5>
+                    <p class="card-text">¡Información del torneo aquí!</p>
+                    <a href="/pages/valorant.html" class="btn btn-warning btn-lg mt-3">Ver Información</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Torneo TFT -->
+              <div class="col-12">
+                <div class="card bg-light text-dark rounded-4 overflow-hidden">
+                  <img src="TFTbanner.png" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Torneo de Teamfight Tactics">
+                  <div class="card-body">
+                    <h5 class="card-title">Teamfight Tactics</h5>
+                    <p class="card-text">¡Información del torneo aquí!</p>
+                    <a href="/pages/TFT.html" class="btn btn-warning btn-lg mt-3">Ver Información</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Torneo AoE II -->
+              <div class="col-12">
+                <div class="card bg-light text-dark rounded-4 overflow-hidden">
+                  <img src="age-of-empires-ii-definitive-edition-uhd-4k-banner.jpg" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Torneo de Age of Empires II">
+                  <div class="card-body">
+                    <h5 class="card-title">Age of Empires II</h5>
+                    <p class="card-text">¡Información del torneo aquí!</p>
+                    <a href="/pages/AOE2.html" class="btn btn-warning btn-lg mt-3">Ver Información</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <br/>
+          <div class="container">
+            <h2 class="text-center mb-4">Próximos torneos 🏆</h2>
+            <br/>
+            <div class="row g-4">
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="footer-container"></div>
+  <script src="footer.js"></script>
+</body>
+</html>
